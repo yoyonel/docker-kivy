@@ -14,7 +14,7 @@
 #
 CONTAINER=kivy
 #docker run -it --rm -e NEWUID=$(id -u) -e NEWGID=$(id -g)	\
-docker run -d -P \
+docker run -d -P --rm \
         --name kivy_server \
         -e NEWUSER=$(id -un) -e NEWUID=501 -e NEWGID=20	\
         -e RESOLUTION="800x480"						\
